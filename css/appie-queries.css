@@ -1,0 +1,499 @@
+/* ------------------- */
+/* Below 1400px */
+/* ------------------- */
+
+@media (max-width:87.5em) {
+    .heading-primary {
+        font-size: 6.2rem;
+    }
+
+    .heading-secondary {
+        font-size: 4.2rem;
+    }
+
+    .how-banner {
+        margin: 3.2rem;
+    }
+}
+
+/* ------------------- */
+/* Below 1200px */
+/* ------------------- */
+@media (max-width:75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .features-grid {
+        padding: 0;
+        padding-top: 5.6rem;
+    }
+
+    .features-grid-text {
+        padding: 0;
+    }
+
+    .section-herp {
+        padding-bottom: 3.2rem;
+    }
+
+    .hero {
+        column-gap: 4.2rem;
+    }
+
+    .video-thumb {
+        width: calc(100% - 1.2rem);
+        height: 94%;
+    }
+
+    .cta-plans {
+        column-gap: 2.4rem;
+    }
+
+    .plan-box {
+        padding-right: 6.4rem;
+    }
+}
+
+/* ------------------- */
+/* Below 990px */
+/* ------------------- */
+
+@media (max-width:61.9em) {
+    html {
+        font-size: 50%;
+    }
+
+    .how-banner {
+        margin: 2.4rem;
+    }
+
+    .features-img {
+        width: 90%;
+    }
+}
+
+/* ------------------- */
+/* Below 850px */
+/* ------------------- */
+@media (max-width:53.2em) {
+
+    /* Mobile Nav */
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        position: absolute;
+        top: -55%;
+        right: -20%;
+        width: 150%;
+        height: 100vh;
+        transform: translateX(100%);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+
+        /* Hide navigation */
+        /* Allows NO transition at all */
+        /* display: none; */
+
+        /* 1- Hide it visually */
+        opacity: 0;
+
+        /* 2- Make it unaccessible to mouse and keyboard */
+        pointer-events: none;
+
+        /* 3- Hide it from screen readers */
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .main-nav ul li {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .nav-wrapper {
+        justify-content: flex-end;
+    }
+
+    .hero {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: end;
+    }
+
+    .email-box {
+        width: 65%;
+    }
+
+    .how-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner-text-box {
+        padding: 3.2rem 2.4rem;
+    }
+
+    .app-grid {
+        grid-template-columns: 1.25fr 1fr 1fr;
+    }
+
+    .counters-grid {
+        column-gap: 4.6rem;
+    }
+
+    .plan-box {
+        padding-right: 3.2rem;
+    }
+
+    /* Sections Padding */
+    .sponsers-section {
+        padding: 0;
+    }
+
+    .how-section,
+    .features-section,
+    .how2-section,
+    .app-section,
+    .cta-section,
+    .footer-section {
+        padding: 6.4rem;
+    }
+
+    .footer-section {
+        padding-bottom: 0;
+    }
+}
+
+/* ----------------- */
+/* Bellow 740px */
+/* ----------------- */
+@media (max-width:46.25em) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-hero {
+        padding-top: 9.6rem;
+    }
+
+    .hero-image-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero-img {
+        width: 35%;
+    }
+
+    .app-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .how-banner {
+        height: inherit;
+    }
+
+    .slider-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-thumb,
+    .video-slide {
+        width: 80%;
+    }
+
+    .video-slide {
+        order: 2;
+    }
+
+    .right-content {
+        display: none;
+    }
+
+    .left-content {
+        margin: 3.2rem 0;
+    }
+
+    .slider-content {
+        margin: 0 9.6rem;
+    }
+
+    .plan-box-end ul {
+        gap: 1.2rem;
+    }
+
+    .counters-grid {
+        justify-items: stretch;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 3.2rem;
+    }
+
+    .cta-plans {
+        grid-template-columns: 1fr;
+        row-gap: 3.2rem;
+    }
+
+    .banner-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2.4rem;
+    }
+
+    .banner-img-box {
+        display: none;
+    }
+
+    .cta-banner-arrs {
+        display: none !important;
+    }
+
+    .cta-banner-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .cta-banner-text {
+        margin-top: 1.2rem;
+    }
+
+    .left-col {
+        margin-right: 0;
+    }
+
+    .sponsers-logos-wrapper {
+        margin: 2.4rem 1.6rem;
+    }
+}
+
+/* ------------------ */
+/* Bellow 550px */
+/* ------------------ */
+@media (max-width:36.9em) {
+    .header {
+        padding: 2.4rem 2.2rem 4.6rem;
+    }
+
+    .logo {
+        margin-right: 4.6rem;
+    }
+    .main-nav {
+        top: -55%;
+        right: -50%;
+        width: 150%;
+        height: 50vh;
+        transform: translateY(100%);
+    }
+    .section-hero {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+
+    .email-box {
+        width: 90%;
+        height: 5.6rem;
+    }
+
+    .heading-secondary {
+        text-align: center;
+    }
+
+    .how-head {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .how-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .how-box {
+        padding: 4.6rem;
+        text-align: center;
+    }
+
+    .box-btn {
+        justify-content: center;
+    }
+
+    .text-box-desc {
+        text-align: center;
+    }
+
+    .banner-2cols {
+        grid-template-columns: 1fr;
+        align-self: start;
+    }
+
+    .banner-col {
+        margin-bottom: 2.4rem;
+    }
+
+    .col-desc {
+        margin-top: 0.6rem;
+    }
+
+    .features-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features-grid-image {
+        display: flex;
+        align-items: center;
+
+        margin-top: 4.6rem;
+        justify-content: center;
+    }
+
+    .features-img {
+        width: 70%;
+    }
+
+    .desc {
+        text-align: center;
+    }
+
+    .counters-grid {
+        grid-template-columns: 1fr;
+        margin: 0 7.4rem;
+    }
+
+    .app-grid {
+        column-gap: 0;
+        grid-template-columns: 2fr 0.5fr;
+    }
+
+    .app-content .heading-secondary,
+    .app-content .desc {
+        text-align: start;
+    }
+
+    .cta-plans {
+        justify-items: stretch;
+        margin: 4.6rem;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.4rem;
+    }
+
+    .ft-logo {
+        width: 75%;
+    }
+
+    .footer-section ul {
+        text-align: center;
+    }
+
+    .footer-col-title {
+        font-size: 2rem;
+    }
+
+    .footer-grid .col1,
+    .footer-grid .col2,
+    .footer-grid .col3,
+    .footer-grid .col4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3.2rem;
+    }
+
+    .col4 ul {
+        align-items: center;
+    }
+
+    .copyrights {
+        border-top: 1px solid rgba(69, 69, 69, 0.63);
+        padding-top: 4.6rem;
+        flex-direction: column;
+    }
+
+    .cp-btns {
+        margin-bottom: 2.4rem;
+    }
+
+    .cp-btn {
+        border-color: transparent;
+    }
+
+
+    .slider-content {
+        margin: 0 1.2rem;
+    }
+
+    .how-section,
+    .features-section,
+    .how2-section,
+    .app-section,
+    .cta-section,
+    .footer-section {
+        padding: 3.2rem;
+    }
+
+    .sponsers-logos-wrapper {
+        gap: 2.4rem;
+        padding: 2.4rem;
+    }
+
+    .sp-logo {
+        padding: 1.4rem 2.2rem;
+    }
+
+    .cta-banner {
+        padding: 2.4rem 3.2rem;
+        margin: 0;
+    }
+
+    .box-desc {
+        margin-right: 0;
+    }
+}
+
+
